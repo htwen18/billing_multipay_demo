@@ -1,0 +1,50 @@
+package com.billing.multipay.model.marketing;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.util.List;
+
+/**
+ * 条件查询代金券批次列表结果对象
+ *
+ * @author thinsstar
+ */
+@NoArgsConstructor
+@Data
+public class FavorStocksQueryResult implements Serializable {
+
+  private static final long serialVersionUID = 1L;
+
+  /**
+   * 批次总数
+   * <p>
+   * 经过条件筛选，查询到的批次总数量。
+   * 示例值：10
+   */
+  private Integer totalCount;
+
+  /**
+   * 批次详情
+   * <p>
+   * 批次详情
+   */
+  private List<FavorStocksGetResult> data;
+
+  /**
+   * 分页大小
+   * <p>
+   * 分页大小，最大10。
+   * 示例值：8
+   */
+  private Integer limit;
+
+  /**
+   * 分页页码
+   * <p>
+   * 页码从0开始，默认第0页。
+   * 示例值：1
+   */
+  private Integer offset;
+}

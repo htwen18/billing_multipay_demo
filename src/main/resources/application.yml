@@ -1,0 +1,10 @@
+billing:
+  multipay:
+    baseUrl: ''
+    mchId: ''
+    resKey: '',
+    miniProgramsAppid: ''
+
+spring:
+  profiles:
+    active: dev
